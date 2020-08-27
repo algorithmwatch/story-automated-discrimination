@@ -1,0 +1,16 @@
+﻿"Ad Set Name",Gender,Reach,Impressions,Frequency,"Result Type",Results,"Cost per Result","Amount Spent (EUR)","CPM (Cost per 1,000 Impressions)","Link Clicks","CPC (Cost per Link Click)","CTR (Link Click-Through Rate)","Reporting Starts","Reporting Ends"
+"DE - Germany - Hairdresser",female,83,84,1.0120481927711,"Link Clicks",2,0.14268292682927,0.28536585365854,3.39721254,2,0.14268293,2.3809523809524,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",unknown,1,1,1,,,,0.010975609756098,10.97560976,,,,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",male,33,33,1,,,,0.15365853658537,4.65631929,,,,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",male,51,51,1,,,,0.16041666666667,3.14542484,,,,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",female,55,55,1,,,,0.18958333333333,3.4469697,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",male,28,29,1.0357142857143,,,,0.08,2.75862069,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",female,32,33,1.03125,,,,0.15,4.54545455,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",unknown,1,1,1,,,,0.01,10,,,,2020-08-01,2020-08-26
+"DE - Germany - Nurse",unknown,1,1,1,,,,0.0097368421052632,9.73684211,,,,2020-08-01,2020-08-26
+"DE - Germany - Nurse",male,23,23,1,"Link Clicks",1,0.10710526315789,0.10710526315789,4.65675057,1,0.10710526,4.3478260869565,2020-08-01,2020-08-26
+"DE - Germany - Nurse",female,60,60,1,,,,0.25315789473684,4.21929825,,,,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",female,127,127,1,"Link Clicks",4,0.092741935483871,0.37096774193548,2.92100584,4,0.09274194,3.1496062992126,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",male,20,20,1,,,,0.089032258064516,4.4516129,,,,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",female,22,22,1,"Link Clicks",3,0.020652173913043,0.06195652173913,2.81620553,3,0.02065217,13.636363636364,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",male,162,162,1,"Link Clicks",4,0.12701086956522,0.50804347826087,3.13607085,4,0.12701087,2.4691358024691,2020-08-01,2020-08-26

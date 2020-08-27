@@ -1,0 +1,17 @@
+﻿"Ad Set Name",Gender,Reach,Impressions,Frequency,"Result Type",Results,"Cost per Result","Amount Spent (EUR)","CPM (Cost per 1,000 Impressions)","Link Clicks","CPC (Cost per Link Click)","CTR (Link Click-Through Rate)","Reporting Starts","Reporting Ends"
+"DE - Germany - Hairdresser",female,147,147,1,"Link Clicks",3,0.14903225806452,0.44709677419355,3.04147465,3,0.14903226,2.0408163265306,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",unknown,1,1,1,,,,0.01241935483871,12.41935484,,,,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",male,69,69,1,"Link Clicks",2,0.15524193548387,0.31048387096774,4.49976625,2,0.15524194,2.8985507246377,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",male,89,89,1,,,,0.248,2.78651685,,,,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",female,102,102,1,,,,0.372,3.64705882,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",male,60,62,1.0333333333333,,,,0.24631578947368,3.97283531,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",female,67,69,1.0298507462687,"Link Clicks",1,0.26,0.26,3.76811594,1,0.26,1.4492753623188,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",unknown,1,1,1,,,,0.013684210526316,13.68421053,,,,2020-08-01,2020-08-26
+"DE - Germany - Nurse",female,119,119,1,"Link Clicks",1,0.48,0.48,4.03361345,1,0.48,0.84033613445378,2020-08-01,2020-08-26
+"DE - Germany - Nurse",male,51,51,1,"Link Clicks",1,0.195,0.195,3.82352941,1,0.195,1.9607843137255,2020-08-01,2020-08-26
+"DE - Germany - Nurse",unknown,2,2,1,,,,0.015,7.5,,,,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",female,205,205,1,"Link Clicks",9,0.068055555555556,0.6125,2.98780488,9,0.06805556,4.390243902439,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",male,24,24,1,,,,0.0875,3.64583333,,,,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",female,23,26,1.1304347826087,"Link Clicks",4,0.0186,0.0744,2.86153846,4,0.0186,15.384615384615,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",male,225,265,1.1777777777778,"Link Clicks",6,0.1426,0.8556,3.22867925,6,0.1426,2.2641509433962,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",unknown,0,1,0,,,,0,0,,,,2020-08-01,2020-08-26

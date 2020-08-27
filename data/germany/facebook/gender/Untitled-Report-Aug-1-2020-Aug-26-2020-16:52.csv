@@ -1,0 +1,14 @@
+﻿"Ad Set Name",Gender,Reach,Impressions,Frequency,"Result Type",Results,"Cost per Result","Amount Spent (EUR)","CPM (Cost per 1,000 Impressions)","Link Clicks","CPC (Cost per Link Click)","CTR (Link Click-Through Rate)","Reporting Starts","Reporting Ends"
+"DE - Germany - Hairdresser",male,31,31,1,,,,0.092727272727273,2.99120235,,,,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",female,54,54,1,,,,0.21636363636364,4.00673401,,,,2020-08-01,2020-08-26
+"DE - Germany - Hairdresser",unknown,3,3,1,,,,0.030909090909091,10.3030303,,,,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",male,31,31,1,,,,0.075,2.41935484,,,,2020-08-01,2020-08-26
+"DE - Germany - Legal Counsel",female,10,10,1,,,,0.025,2.5,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",female,9,9,1,,,,0,0,,,,2020-08-01,2020-08-26
+"DE - Germany - Machine Learning",male,7,7,1,,,,0,0,,,,2020-08-01,2020-08-26
+"DE - Germany - Nurse",female,13,13,1,,,,0.025,1.92307692,,,,2020-08-01,2020-08-26
+"DE - Germany - Nurse",male,19,19,1,,,,0.075,3.94736842,,,,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",female,53,53,1,,,,0,0,,,,2020-08-01,2020-08-26
+"DE - Germany - Preschool teacher",male,26,26,1,,,,0.22,8.46153846,,,,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",female,14,17,1.2142857142857,"Link Clicks",2,0.024375,0.04875,2.86764706,2,0.024375,11.764705882353,2020-08-01,2020-08-26
+"DE - Germany - Truck Driver",male,73,105,1.4383561643836,"Link Clicks",1,0.34125,0.34125,3.25,1,0.34125,0.95238095238095,2020-08-01,2020-08-26

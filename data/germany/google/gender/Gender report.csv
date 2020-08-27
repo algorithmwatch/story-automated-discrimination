@@ -1,0 +1,24 @@
+Gender report
+All time
+Demographic status,Gender,Campaign,Ad group,Status,Clicks,Impr.,CTR,Currency code,Avg. CPC,Cost
+Enabled,Male,DE - Truck driver,Ad group 1,Ad group not complete,27,"9,236",0.29%,EUR,0.48,12.89
+Enabled,Female,DE - Truck driver,Ad group 1,Ad group not complete,33,"7,067",0.47%,EUR,0.51,16.79
+Enabled,Unknown,DE - Truck driver,Ad group 1,Ad group not complete,21,"7,986",0.26%,EUR,0.49,10.20
+Enabled,Male,DE - Legal Counsel,Ad group 1,Ad group not complete,35,"9,885",0.35%,EUR,0.44,15.30
+Enabled,Female,DE - Legal Counsel,Ad group 1,Ad group not complete,25,"5,573",0.45%,EUR,0.49,12.14
+Enabled,Unknown,DE - Legal Counsel,Ad group 1,Ad group not complete,29,"8,691",0.33%,EUR,0.53,15.50
+Enabled,Male,DE - Preschool teacher,Ad group 1,Ad group not complete,25,"8,969",0.28%,EUR,0.43,10.82
+Enabled,Female,DE - Preschool teacher,Ad group 1,Ad group not complete,40,"8,136",0.49%,EUR,0.50,19.84
+Enabled,Unknown,DE - Preschool teacher,Ad group 1,Ad group not complete,30,"9,023",0.33%,EUR,0.32,9.49
+Enabled,Male,DE - Nurse,Ad group 1,Ad group not complete,34,"10,676",0.32%,EUR,0.52,17.58
+Enabled,Female,DE - Nurse,Ad group 1,Ad group not complete,38,"8,078",0.47%,EUR,0.58,21.89
+Enabled,Unknown,DE - Nurse,Ad group 1,Ad group not complete,14,"7,716",0.18%,EUR,0.32,4.45
+Enabled,Male,DE - Hairdresser,Ad group 1,Ad group not complete,25,"6,431",0.39%,EUR,0.39,9.86
+Enabled,Female,DE - Hairdresser,Ad group 1,Ad group not complete,43,"6,786",0.63%,EUR,0.45,19.23
+Enabled,Unknown,DE - Hairdresser,Ad group 1,Ad group not complete,26,"7,930",0.33%,EUR,0.42,10.96
+Enabled,Female,DE - Machine Learning,Ad group 1,Ad group not complete,0,0, --,EUR, --,0.00
+Enabled,Male,DE - Machine Learning,Ad group 1,Ad group not complete,0,0, --,EUR, --,0.00
+Enabled,Unknown,DE - Machine Learning,Ad group 1,Ad group not complete,0,0, --,EUR, --,0.00
+Total: Genders,,,,,445,"122,183",0.36%,EUR,0.47,206.94
+Total: Account,,,,,445,"122,183",0.36%,EUR,0.47,206.94
+Total: Display,,,,,445,"122,183",0.36%,EUR,0.47,206.94
