@@ -1,0 +1,37 @@
+﻿"Ad Set Name",Age,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"DE - Germany - Legal Counsel",18-24,not_delivering,adset,418,438,1.0478468899522,"Link Clicks",4,0.92,0.23,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",18-24,not_delivering,adset,266,280,1.0526315789474,"Link Clicks",13,0.9,0.069230769230769,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",18-24,not_delivering,adset,134,143,1.0671641791045,"Link Clicks",7,0.31,0.044285714285714,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",18-24,not_delivering,adset,209,209,1,"Link Clicks",4,0.52,0.13,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",18-24,not_delivering,adset,60,66,1.1,,,0.21,,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",18-24,not_delivering,adset,54,59,1.0925925925926,"Link Clicks",2,0.13,0.065,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",25-34,not_delivering,adset,1056,1104,1.0454545454545,"Link Clicks",34,2.46,0.072352941176471,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Legal Counsel",25-34,not_delivering,adset,816,816,1,"Link Clicks",1,1.79,1.79,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",25-34,not_delivering,adset,366,388,1.0601092896175,"Link Clicks",3,1.02,0.34,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",25-34,not_delivering,adset,508,534,1.0511811023622,"Link Clicks",23,1.28,0.055652173913043,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",25-34,not_delivering,adset,242,248,1.0247933884298,"Link Clicks",2,0.82,0.41,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",25-34,not_delivering,adset,1026,1097,1.0692007797271,"Link Clicks",40,2.95,0.07375,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Legal Counsel",35-44,not_delivering,adset,1269,1269,1,"Link Clicks",2,2.89,1.445,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",35-44,not_delivering,adset,1002,1078,1.0758483033932,"Link Clicks",12,2.94,0.245,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",35-44,not_delivering,adset,706,749,1.0609065155807,"Link Clicks",7,3.06,0.43714285714286,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",35-44,not_delivering,adset,2612,2735,1.0470903522205,"Link Clicks",77,6.55,0.085064935064935,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",35-44,not_delivering,adset,1164,1293,1.110824742268,"Link Clicks",49,3.66,0.07469387755102,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",35-44,not_delivering,adset,1282,1400,1.0920436817473,"Link Clicks",59,4.43,0.075084745762712,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",45-54,not_delivering,adset,2200,2252,1.0236363636364,"Link Clicks",42,6.97,0.16595238095238,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Legal Counsel",45-54,not_delivering,adset,1892,2061,1.0893234672304,"Link Clicks",11,4.94,0.44909090909091,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",45-54,not_delivering,adset,2056,2280,1.1089494163424,"Link Clicks",173,6.97,0.04028901734104,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",45-54,not_delivering,adset,1538,1651,1.0734720416125,"Link Clicks",28,7.11,0.25392857142857,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",45-54,not_delivering,adset,1602,1653,1.0318352059925,"Link Clicks",77,5.5,0.071428571428571,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",45-54,not_delivering,adset,1720,1831,1.0645348837209,"Link Clicks",70,5.09,0.072714285714286,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",55-64,not_delivering,adset,1490,1630,1.0939597315436,"Link Clicks",27,4.72,0.17481481481481,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",55-64,not_delivering,adset,1260,1345,1.0674603174603,"Link Clicks",98,4.81,0.049081632653061,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",55-64,not_delivering,adset,1177,1269,1.0781648258284,"Link Clicks",14,4.88,0.34857142857143,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Legal Counsel",55-64,not_delivering,adset,1702,1880,1.1045828437133,"Link Clicks",4,4.43,1.1075,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",55-64,not_delivering,adset,948,1030,1.0864978902954,"Link Clicks",30,2.51,0.083666666666667,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",55-64,not_delivering,adset,780,832,1.0666666666667,"Link Clicks",32,3.08,0.09625,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Truck Driver",65+,not_delivering,adset,202,202,1,"Link Clicks",27,0.78,0.028888888888889,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Machine Learning",65+,not_delivering,adset,496,544,1.0967741935484,"Link Clicks",5,1.55,0.31,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Hairdresser",65+,not_delivering,adset,212,252,1.188679245283,"Link Clicks",8,0.65,0.08125,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Nurse",65+,not_delivering,adset,474,540,1.1392405063291,"Link Clicks",10,1.48,0.148,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Preschool teacher",65+,not_delivering,adset,286,286,1,"Link Clicks",6,0.7,0.11666666666667,2020-08-26,2020-08-27,2020-08-01,2020-08-30
+"DE - Germany - Legal Counsel",65+,not_delivering,adset,1082,1241,1.1469500924214,"Link Clicks",4,2.41,0.6025,2020-08-26,2020-08-27,2020-08-01,2020-08-30
