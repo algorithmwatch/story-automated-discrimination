@@ -1,0 +1,19 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - FR",Hairdresser,male,active,adset,665,665,1,"Link Clicks",38,1.6075438596491,0.04230378578024,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Hairdresser,female,active,adset,1218,1218,1,"Link Clicks",74,3.0898245614035,0.041754385964912,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Hairdresser,unknown,active,adset,28,28,1,,,0.062631578947368,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Legal Counsel",male,active,adset,1262,1269,1.0055467511886,"Link Clicks",14,1.983986013986,0.14171328671329,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Legal Counsel",female,active,adset,1424,1429,1.0035112359551,"Link Clicks",17,2.4157342657343,0.14210201563143,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Legal Counsel",unknown,active,adset,14,14,1,,,0.01027972027972,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Machine Learning",female,active,adset,1051,1081,1.0285442435775,"Link Clicks",20,2.4906966292135,0.12453483146067,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Machine Learning",unknown,active,adset,21,23,1.0952380952381,,,0.041168539325843,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Machine Learning",male,active,adset,967,991,1.0248190279214,"Link Clicks",28,2.0481348314607,0.073147672552167,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Nurse,unknown,active,adset,25,25,1,,,0.062176870748299,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Nurse,female,active,adset,1641,1656,1.0091407678245,"Link Clicks",37,3.5855328798186,0.096906294049151,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Nurse,male,active,adset,498,505,1.0140562248996,"Link Clicks",4,0.92229024943311,0.23057256235828,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Preschool teacher",female,active,adset,1626,1654,1.0172201722017,"Link Clicks",124,4.1670769230769,0.033605459057072,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Preschool teacher",male,active,adset,179,182,1.0167597765363,"Link Clicks",13,0.46186813186813,0.03552831783601,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Preschool teacher",unknown,active,adset,28,28,1,"Link Clicks",1,0.041054945054945,0.041054945054945,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Truck Driver",unknown,active,adset,26,27,1.0384615384615,,,0.030963597430407,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Truck Driver",male,active,adset,2196,2218,1.0100182149362,"Link Clicks",168,4.2420128479657,0.025250076475987,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Truck Driver",female,active,adset,302,306,1.0132450331126,"Link Clicks",11,0.54702355460385,0.049729414054896,2020-08-30,Ongoing,2020-09-01,2020-09-01

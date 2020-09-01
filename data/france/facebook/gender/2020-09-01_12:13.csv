@@ -1,0 +1,13 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - FR",Hairdresser,female,active,adset,50,50,1,"Link Clicks",1,0.10857142857143,0.10857142857143,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Hairdresser,male,active,adset,43,43,1,"Link Clicks",1,0.081428571428571,0.081428571428571,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Legal Counsel",female,active,adset,18,18,1,,,0.035,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Legal Counsel",male,active,adset,12,12,1,,,0.035,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Machine Learning",male,active,adset,7,19,2.7142857142857,"Link Clicks",3,0.06,0.02,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Machine Learning",female,active,adset,7,17,2.4285714285714,"Link Clicks",2,0.03,0.015,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Nurse,female,active,adset,43,44,1.0232558139535,"Link Clicks",1,0.075,0.075,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR",Nurse,male,active,adset,30,31,1.0333333333333,,,0.045,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Preschool teacher",female,active,adset,62,62,1,"Link Clicks",3,0.10833333333333,0.036111111111111,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Preschool teacher",male,active,adset,11,11,1,,,0.021666666666667,,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Truck Driver",male,active,adset,137,137,1,"Link Clicks",8,0.25806451612903,0.032258064516129,2020-08-30,Ongoing,2020-09-01,2020-09-01
+"Automated Discrimination - FR","Truck Driver",female,active,adset,27,27,1,"Link Clicks",3,0.061935483870968,0.020645161290323,2020-08-30,Ongoing,2020-09-01,2020-09-01
