@@ -1,0 +1,398 @@
+---
+title: "R Notebook"
+output: 
+  html_notebook: 
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+```{r}
+source("config.R")
+source("01_data_import.R")
+source("02_data_cleaning.R")
+source("03_data_subsets.R")
+```
+
+# Running the pipeline
+
+Style for the pipeline images
+
+```{r fig.width=4, fig.height=2, dpi=300}
+google_male_female %>%
+    filter(gender == "female",
+           country == "DE") %>%
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_vline(aes(xintercept = .5))+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1))+
+  # scale_y_discrete(expand = expansion(add = c(0.6,6))) +
+  labs(x = paste0("Female share of impressions\nfor campaign in ", "DE on Google"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+
+Run this command to produce the images for all countries and both Facebook and Google:
+
+```{r echo=TRUE,eval=FALSE}
+source("data_pipeline.R")
+```
+
+
+# Germany
+
+## Google
+
+### Impressions
+
+#### Total per gender
+
+```{r}
+google %>% 
+  filter(country == "DE") %>% 
+  slice_max(datetime) %>% 
+  group_by(country, gender) %>% 
+  summarise(impressions = sum(impressions)) %>%
+  mutate(impressions_rel = (impressions/sum(impressions)) %>% round(4)) %>% 
+  knitr::kable()
+```
+
+
+#### Shares for all genders
+
+```{r}
+google %>% 
+  filter(country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job, color = gender))+
+  geom_vline(aes(xintercept = .5))+
+  scale_color_manual(values = c('#7fc97f','#beaed4','#fdc086'), name = "Gender")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Share of impressions on Google",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+#### Visualization of impression shares as point plot 
+
+Similar to figure 8 of the original study
+
+##### With gender type "undetermined"
+
+```{r}
+google %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Google",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+##### Without gender type "undetermined"
+
+```{r}
+google_male_female %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Google",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+#### Visualization of impression shares as bar chart
+
+
+##### With gender type "undetermined"
+
+```{r}
+google %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_col(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), fill = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Google",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+##### Without gender type "undetermined"
+
+```{r}
+google_male_female %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_col(aes(x = impr_rel, 
+               y = job %>% fct_reorder(., impr_rel)), 
+           fill = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Google",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+## Facebook
+
+### Impressions 
+
+#### Total per gender
+
+```{r}
+facebook %>% 
+  filter(country == "DE") %>% 
+  slice_max(datetime) %>% 
+  group_by(gender) %>% 
+  summarise(impressions = sum(impressions)) %>%
+  mutate(impressions_rel = (impressions/sum(impressions)) %>% round(4)) %>% 
+  knitr::kable()
+```
+
+
+#### Shares for all genders
+
+```{r}
+facebook %>% 
+  filter(country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job, color = gender))+
+  geom_vline(aes(xintercept = .5))+
+  scale_color_manual(values = c('#7fc97f','#beaed4','#fdc086'), name = "Gender")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Share of impressions on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+#### Visualization as point plot 
+
+Similar to figure 8 of the original study
+
+##### Without gender type "undetermined"
+
+Because the amount of "undetermined" impressions is negligible.
+
+```{r}
+facebook_male_female %>% 
+  filter(country == "DE",
+         gender == "female") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+#### Visualization as bar chart
+
+
+##### Without gender type "undetermined"
+
+```{r}
+facebook_male_female %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_col(aes(x = impr_rel, 
+               y = job %>% fct_reorder(., impr_rel)), 
+           fill = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in DE on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR and Impressions over time
+
+```{r}
+facebook %>% 
+  filter(gender == "female",
+         country == "DE") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = impr_rel, color = job))+
+  geom_point(aes(x = time, y = impr_rel, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  labs(x = "Time in hours",
+       y = "Female share of Impressions for Facebook in DE")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+
+
+
+# France
+
+## Facebook
+
+### Impressions 
+
+#### Total per gender
+
+```{r}
+facebook %>% 
+  filter(country == "FR") %>% 
+  slice_max(datetime) %>% 
+  group_by(gender) %>% 
+  summarise(impressions = sum(impressions)) %>%
+  mutate(impressions_rel = (impressions/sum(impressions)) %>% round(4)) %>% 
+  knitr::kable()
+```
+
+
+#### Shares for all genders
+
+```{r}
+facebook %>% 
+  filter(country == "FR") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job, color = gender))+
+  geom_vline(aes(xintercept = .5))+
+  scale_color_manual(values = c('#7fc97f','#beaed4','#fdc086'), name = "Gender")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Share of impressions on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+#### Visualization as point plot 
+
+Similar to figure 8 of the original study
+
+##### Without gender type "undetermined"
+
+Because the amount of "undetermined" impressions is negligible.
+
+```{r}
+facebook_male_female %>% 
+  filter(gender == "female",
+         country == "FR") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in FR on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+#### Visualization as bar chart
+
+
+##### Without gender type "undetermined"
+
+```{r}
+facebook_male_female %>% 
+  filter(gender == "female",
+         country == "FR") %>% 
+  slice_max(datetime) %>% 
+  ggplot()+
+  geom_col(aes(x = impr_rel, 
+               y = job %>% fct_reorder(., impr_rel)), 
+           fill = "#7fc97f")+
+  geom_vline(aes(xintercept = .5))+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = "Female share of impressions for campaign in FR on Facebook",
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR and Impressions over time
+
+```{r}
+facebook %>% 
+  filter(gender == "female",
+         country == "FR") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = impr_rel, color = job))+
+  geom_point(aes(x = time, y = impr_rel, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  labs(x = "Time in hours",
+       y = "Female share of Impressions for Facebook in FR")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+
+
+## Statistical test for significance
+
+### Significance: Truck driver
+
+The siginificance of the difference in impressions is big enough; the difference in clicks is not significant.
+
+```{r}
+x <- google_male_female %>%
+  filter(gender == "female", job == "Truck driver",
+         datetime == google_male_female %>% pull(datetime) %>% max()) %>%
+  pull(impressions)
+n <- google_male_female %>% 
+  filter(job == "Truck driver",
+         datetime == google_male_female %>% pull(datetime) %>% max()) %>%
+  pull(impressions) %>% 
+  sum()
+binom.test(x,n)
+
+x <- google_male_female %>%
+  filter(gender == "female", job == "Truck driver",
+         datetime == google_male_female %>% pull(datetime) %>% max()) %>%
+  pull(clicks)
+n <- google_male_female %>%
+  filter(job == "Truck driver",
+         datetime == google_male_female %>% pull(datetime) %>% max()) %>% 
+  pull(clicks) %>%
+  sum()
+binom.test(x,n)
+```
+
+
+
+

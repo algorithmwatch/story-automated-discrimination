@@ -1,0 +1,10 @@
+require(needs)
+needs(dplyr,
+      forcats,
+      ggplot2,
+      lubridate,
+      tidymodels,
+      janitor,
+      stringr,
+      tidyr,
+      readxl)
