@@ -1,0 +1,43 @@
+﻿"Campaign Name","Ad Set Name",Region,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH","Truck Driver",Vaud,active,adset,40,41,1.025,"Link Clicks",6,0.195,0.0325,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Bern,active,adset,9,9,1,,,0.0504,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning",Valais,active,adset,7,7,1,,,0.0525,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning",Neuchâtel,active,adset,7,7,1,,,0.07875,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning",Bern,active,adset,7,7,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher","Canton of Geneva",active,adset,26,26,1,"Link Clicks",2,0.1512,0.0756,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Vaud,active,adset,20,20,1,"Link Clicks",2,0.0672,0.0336,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Valais,active,adset,17,17,1,"Link Clicks",1,0.084,0.084,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Fribourg,active,adset,11,11,1,"Link Clicks",1,0.0504,0.0504,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Neuchâtel,active,adset,8,8,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning","Canton of Geneva",active,adset,11,11,1,,,0.02625,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Jura,active,adset,3,3,1,,,0.0168,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Preschool teacher",Rhône-Alpes,active,adset,2,2,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Vaud,active,adset,21,21,1,"Link Clicks",2,0.11733333333333,0.058666666666667,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Valais,active,adset,20,19,0.95,"Link Clicks",1,0.14666666666667,0.14666666666667,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,"Canton of Geneva",active,adset,18,16,0.88888888888889,"Link Clicks",1,0.088,0.088,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Neuchâtel,active,adset,10,10,1,"Link Clicks",1,0.058666666666667,0.058666666666667,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Fribourg,active,adset,8,10,1.25,,,0.058666666666667,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Bern,active,adset,10,12,1.2,,,0.058666666666667,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning",Fribourg,active,adset,9,9,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Machine Learning",Vaud,active,adset,14,14,1,,,0.0525,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver",Valais,active,adset,20,21,1.05,"Link Clicks",2,0.105,0.0525,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Bern,active,adset,13,16,1.2307692307692,,,0.069090909090909,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver",Bern,active,adset,17,17,1,,,0.06,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver","Canton of Geneva",active,adset,13,13,1,,,0.075,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver",Fribourg,active,adset,12,12,1,,,0.03,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver",Neuchâtel,active,adset,9,9,1,"Link Clicks",1,0.045,0.045,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Truck Driver",Jura,active,adset,1,1,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,"Canton of Geneva",active,adset,22,26,1.1818181818182,,,0.046060606060606,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Vaud,active,adset,20,24,1.2,"Link Clicks",1,0.092121212121212,0.092121212121212,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Valais,active,adset,13,16,1.2307692307692,,,0.057575757575758,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Fribourg,active,adset,7,7,1,,,0.023030303030303,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Rhône-Alpes,active,adset,2,2,1,,,0.0175,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Neuchâtel,active,adset,5,5,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Nurse,Jura,active,adset,4,4,1,,,0.023030303030303,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Vaud,active,adset,21,24,1.1428571428571,,,0.14,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel","Canton of Geneva",active,adset,16,16,1,,,0.0875,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Fribourg,active,adset,16,12,0.75,,,0.07,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Valais,active,adset,10,10,1,,,0.0525,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Bern,active,adset,14,9,0.64285714285714,,,0.0525,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Legal Counsel",Neuchâtel,active,adset,3,8,2.6666666666667,,,0.035,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Hairdresser,Jura,active,adset,4,4,1,,,0.029333333333333,,2020-08-31,Ongoing,2020-09-01,2020-09-02

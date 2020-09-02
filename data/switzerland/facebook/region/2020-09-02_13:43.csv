@@ -1,0 +1,49 @@
+﻿"Campaign Name",Region,"Ad Set Name","Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH",Neuchâtel,Hairdresser,active,adset,48,48,1,"Link Clicks",2,0.23138138138138,0.11569069069069,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,Hairdresser,active,adset,67,67,1,"Link Clicks",3,0.3521021021021,0.11736736736737,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,Hairdresser,active,adset,69,69,1,"Link Clicks",3,0.42252252252252,0.14084084084084,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva",Hairdresser,active,adset,76,76,1,"Link Clicks",10,0.41246246246246,0.041246246246246,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,Hairdresser,active,adset,156,156,1,"Link Clicks",6,0.97582582582583,0.16263763763764,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,Hairdresser,active,adset,160,162,1.0125,"Link Clicks",10,0.85510510510511,0.085510510510511,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,Hairdresser,active,adset,19,19,1,,,0.1006006006006,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Neuchâtel,"Legal Counsel",active,adset,73,73,1,"Link Clicks",2,0.33206896551724,0.16603448275862,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Unknown,"Legal Counsel",active,adset,1,1,1,,,0.010062695924765,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Rhône-Alpes,"Legal Counsel",active,adset,4,4,1,,,0.02012539184953,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,"Legal Counsel",active,adset,17,17,1,,,0.080501567398119,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,"Legal Counsel",active,adset,83,86,1.0361445783133,"Link Clicks",3,0.29181818181818,0.097272727272727,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,"Legal Counsel",active,adset,92,94,1.0217391304348,"Link Clicks",1,0.30188087774295,0.30188087774295,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,"Legal Counsel",active,adset,121,122,1.0082644628099,"Link Clicks",3,0.53332288401254,0.17777429467085,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva","Legal Counsel",active,adset,188,193,1.0265957446809,"Link Clicks",5,0.75470219435737,0.15094043887147,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,"Legal Counsel",active,adset,238,238,1,"Link Clicks",3,0.88551724137931,0.2951724137931,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,"Machine Learning",active,adset,172,179,1.0406976744186,"Link Clicks",3,0.88126213592233,0.29375404530744,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,"Machine Learning",active,adset,20,20,1,,,0.060776699029126,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,"Machine Learning",active,adset,61,65,1.0655737704918,"Link Clicks",1,0.32414239482201,0.32414239482201,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Rhône-Alpes,"Machine Learning",active,adset,3,3,1,"Link Clicks",1,0.050647249190939,0.050647249190939,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Neuchâtel,"Machine Learning",active,adset,62,66,1.0645161290323,"Link Clicks",2,0.30388349514563,0.15194174757282,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,"Machine Learning",active,adset,66,68,1.030303030303,,,0.21271844660194,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva","Machine Learning",active,adset,104,106,1.0192307692308,"Link Clicks",3,0.58750809061489,0.19583603020496,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,"Machine Learning",active,adset,136,138,1.0147058823529,"Link Clicks",2,0.70906148867314,0.35453074433657,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Rhône-Alpes,Nurse,active,adset,3,3,1,"Link Clicks",1,0.020122324159021,0.020122324159021,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,Nurse,active,adset,26,26,1,,,0.10061162079511,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Neuchâtel,Nurse,active,adset,44,44,1,"Link Clicks",2,0.17103975535168,0.085519877675841,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,Nurse,active,adset,90,91,1.0111111111111,"Link Clicks",1,0.46281345565749,0.46281345565749,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,Nurse,active,adset,102,104,1.0196078431373,"Link Clicks",3,0.45275229357798,0.15091743119266,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,Nurse,active,adset,165,166,1.0060606060606,"Link Clicks",2,0.58354740061162,0.29177370030581,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,Nurse,active,adset,189,190,1.005291005291,"Link Clicks",6,0.98599388379205,0.16433231396534,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva",Nurse,active,adset,128,128,1,"Link Clicks",2,0.51311926605505,0.25655963302752,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,"Preschool teacher",active,adset,171,171,1,"Link Clicks",16,0.8725,0.05453125,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva","Preschool teacher",active,adset,150,153,1.02,"Link Clicks",10,0.84133928571429,0.084133928571429,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,"Preschool teacher",active,adset,111,111,1,"Link Clicks",9,0.55050595238095,0.061167328042328,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,"Preschool teacher",active,adset,87,87,1,"Link Clicks",5,0.48818452380952,0.097636904761905,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Neuchâtel,"Preschool teacher",active,adset,60,60,1,,,0.31160714285714,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,"Preschool teacher",active,adset,59,60,1.0169491525424,,,0.24928571428571,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,"Preschool teacher",active,adset,34,34,1,"Link Clicks",2,0.16619047619048,0.083095238095238,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Rhône-Alpes,"Preschool teacher",active,adset,2,2,1,,,0.010386904761905,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Valais,"Truck Driver",active,adset,141,143,1.0141843971631,"Link Clicks",9,0.66,0.073333333333333,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Rhône-Alpes,"Truck Driver",active,adset,1,1,1,,,0,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Jura,"Truck Driver",active,adset,12,12,1,,,0.071076923076923,,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Neuchâtel,"Truck Driver",active,adset,68,69,1.0147058823529,"Link Clicks",3,0.31476923076923,0.10492307692308,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH","Canton of Geneva","Truck Driver",active,adset,71,71,1,"Link Clicks",3,0.36553846153846,0.12184615384615,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Bern,"Truck Driver",active,adset,109,109,1,"Link Clicks",6,0.33507692307692,0.055846153846154,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Fribourg,"Truck Driver",active,adset,118,118,1,"Link Clicks",9,0.46707692307692,0.051897435897436,2020-08-31,Ongoing,2020-09-01,2020-09-02
+"Automated Discrimination - CH",Vaud,"Truck Driver",active,adset,218,220,1.0091743119266,"Link Clicks",19,1.0864615384615,0.057182186234818,2020-08-31,Ongoing,2020-09-01,2020-09-02
