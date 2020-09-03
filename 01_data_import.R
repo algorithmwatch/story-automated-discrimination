@@ -28,7 +28,7 @@ clean_facebook_data <- function(input) {
       mutate(country = str_extract(country, "[:upper:]{2}"),
              gender = case_when(gender == "unknown" ~ "undetermined",
                                 TRUE ~ gender),
-             ctr = NA,
+             ctr = clicks/impressions,
              job = if_else(job == "Preschool teacher", "Child care worker", job))# we changed the term afterwards for accuracy
   } else {
     # Cleaning for old reports
