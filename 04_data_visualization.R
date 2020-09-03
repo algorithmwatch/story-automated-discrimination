@@ -5,7 +5,7 @@ for (c in countries) {
            country == c) %>%
     slice_max(datetime) %>%
     ggplot()+
-    geom_vline(aes(xintercept = .5))+
+    # geom_vline(aes(xintercept = .5))+
     geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
     scale_x_continuous(limits = c(0,1))+
     # scale_y_discrete(expand = expansion(add = c(0.6,6))) +
@@ -30,7 +30,7 @@ for (c in countries) {
            country == c) %>%
     slice_max(datetime) %>%
     ggplot()+
-    geom_vline(aes(xintercept = .5))+
+    # geom_vline(aes(xintercept = .5))+
     geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
     scale_x_continuous(limits = c(0,1))+
     # scale_y_discrete(expand = expansion(add = c(0.6,6))) +
