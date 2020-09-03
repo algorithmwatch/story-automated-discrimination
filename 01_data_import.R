@@ -1,6 +1,6 @@
 # Data import for Google
 
-folder <- "data/germany/google/"
+folder <- "data/google/"
 subfolder <- "gender"
 filenames_google <- list.files(paste0(folder, subfolder), full.names = T)
 filenames_google <- filenames_google[-1] # remove the test run results
