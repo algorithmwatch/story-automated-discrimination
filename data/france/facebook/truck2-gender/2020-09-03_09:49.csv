@@ -1,0 +1,13 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - FR - Trucks2","Truck Driver - image-lipstick",female,active,adset,23,23,1,,,0.04,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - image-lipstick",male,active,adset,8,8,1,,,0.02,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - image-lipstick",unknown,active,adset,2,2,1,,,0.01,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - baseline",male,active,adset,45,45,1,"Link Clicks",4,0.086153846153846,0.021538461538462,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - baseline",female,active,adset,24,24,1,"Link Clicks",1,0.053846153846154,0.053846153846154,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - baseline",unknown,active,adset,1,1,1,,,0,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - gendered",male,active,adset,69,69,1,,,0.088947368421053,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - gendered",female,active,adset,24,24,1,,,0.041052631578947,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - feminine",male,active,adset,32,32,1,"Link Clicks",2,0.047142857142857,0.023571428571429,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - feminine",female,active,adset,13,13,1,,,0.012857142857143,,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - image-road",female,active,adset,79,79,1,"Link Clicks",1,0.11,0.11,,,2020-09-01,2020-09-03
+"Automated Discrimination - FR - Trucks2","Truck Driver - image-road",male,active,adset,76,76,1,"Link Clicks",2,0.11,0.055,,,2020-09-01,2020-09-03
