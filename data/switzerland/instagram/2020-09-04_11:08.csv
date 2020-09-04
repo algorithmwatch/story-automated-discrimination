@@ -1,0 +1,14 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH - IG","Preschool teacher",unknown,active,adset,4,4,1,,,0.01,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Preschool teacher",female,active,adset,52,52,1,,,0.2,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Preschool teacher",male,active,adset,4,4,1,,,0.01,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",male,active,adset,57,57,1,,,0.2,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",female,active,adset,11,11,1,,,0.07,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",unknown,active,adset,2,2,1,,,0.01,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Hairdresser,male,active,adset,46,46,1,"Link Clicks",1,0.27,0.27,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Hairdresser,female,active,adset,11,11,1,,,0.05,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Machine Learning",male,active,adset,55,55,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Machine Learning",female,active,adset,16,16,1,,,0.14,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",male,active,adset,47,48,1.0212765957447,,,0.08125,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",female,active,adset,28,28,1,,,0.1625,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",unknown,active,adset,1,1,1,,,0.01625,,,,2020-09-01,2020-09-04

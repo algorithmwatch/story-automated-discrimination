@@ -1,0 +1,8 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH - incl. FR","Truck Driver",male,active,adset,53,53,1,"Link Clicks",1,0.24,0.24,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Truck Driver",female,active,adset,13,13,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",female,active,adset,53,53,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,female,active,adset,17,17,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,male,active,adset,9,9,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,female,active,adset,37,37,1,,,0,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,male,active,adset,27,27,1,,,0.16,,,,2020-09-01,2020-09-04

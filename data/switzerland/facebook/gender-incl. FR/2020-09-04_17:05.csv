@@ -1,0 +1,19 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH - incl. FR","Truck Driver",female,active,adset,61,61,1,"Link Clicks",2,0.19299212598425,0.096496062992126,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Truck Driver",male,active,adset,790,795,1.0063291139241,"Link Clicks",18,2.3565354330709,0.1309186351706,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Truck Driver",unknown,active,adset,7,7,1,,,0.030472440944882,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",unknown,active,adset,10,11,1.1,,,0.010212765957447,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",male,active,adset,61,64,1.0491803278689,"Link Clicks",2,0.14297872340426,0.071489361702128,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",female,active,adset,664,687,1.0346385542169,"Link Clicks",11,2.2468085106383,0.20425531914894,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,female,active,adset,524,524,1,"Link Clicks",10,1.819914893617,0.1819914893617,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,male,active,adset,260,263,1.0115384615385,"Link Clicks",2,0.57906382978723,0.28953191489362,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,unknown,active,adset,7,7,1,,,0.031021276595745,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",female,active,adset,358,380,1.0614525139665,"Link Clicks",5,0.95,0.19,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",unknown,active,adset,11,15,1.3636363636364,,,0.04,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",male,active,adset,628,649,1.0334394904459,"Link Clicks",8,1.48,0.185,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Legal Counsel",male,active,adset,464,472,1.0172413793103,"Link Clicks",7,1.2786026200873,0.18265751715533,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Legal Counsel",female,active,adset,369,378,1.0243902439024,"Link Clicks",2,1.1109170305677,0.55545851528384,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Legal Counsel",unknown,active,adset,3,6,2,,,0.010480349344978,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,unknown,active,adset,8,8,1,"Link Clicks",1,0.020401606425703,0.020401606425703,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,female,active,adset,420,431,1.0261904761905,"Link Clicks",12,1.4485140562249,0.12070950468541,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,male,active,adset,383,397,1.0365535248042,"Link Clicks",9,1.0710843373494,0.1190093708166,,,2020-09-01,2020-09-04

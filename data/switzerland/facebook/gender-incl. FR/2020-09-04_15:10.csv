@@ -1,0 +1,17 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH - incl. FR","Truck Driver",unknown,active,adset,2,2,1,,,0.011891891891892,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Truck Driver",female,active,adset,17,17,1,,,0.035675675675676,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Truck Driver",male,active,adset,107,108,1.0093457943925,"Link Clicks",1,0.39243243243243,0.39243243243243,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",female,active,adset,84,113,1.3452380952381,"Link Clicks",1,0.32586206896552,0.32586206896552,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Preschool teacher",male,active,adset,8,12,1.5,,,0.024137931034483,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,female,active,adset,58,58,1,,,0.21461538461538,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,male,active,adset,28,28,1,,,0.083461538461538,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Nurse,unknown,active,adset,1,1,1,,,0.011923076923077,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",male,active,adset,61,61,1,,,0.16,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",female,active,adset,34,34,1,,,0.07,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Machine Learning",unknown,active,adset,2,2,1,,,0.01,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Legal Counsel",female,active,adset,52,52,1,,,0.14636363636364,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR","Legal Counsel",male,active,adset,47,47,1,,,0.083636363636364,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,female,active,adset,45,69,1.5333333333333,,,0.21333333333333,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,male,active,adset,42,52,1.2380952380952,,,0.14666666666667,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - incl. FR",Hairdresser,unknown,active,adset,1,3,3,"Link Clicks",1,0,0,,,2020-09-01,2020-09-04

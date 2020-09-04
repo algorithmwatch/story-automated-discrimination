@@ -1,0 +1,19 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - CH - IG",Hairdresser,male,active,adset,434,444,1.0230414746544,"Link Clicks",8,2.0548905109489,0.25686131386861,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Hairdresser,unknown,active,adset,1,1,1,,,0.0099270072992701,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Hairdresser,female,active,adset,126,128,1.015873015873,,,0.65518248175182,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",female,active,adset,189,191,1.010582010582,"Link Clicks",1,0.95306859205776,0.95306859205776,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",male,active,adset,544,546,1.0036764705882,"Link Clicks",2,1.7671480144404,0.88357400722022,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Legal Counsel",unknown,active,adset,7,7,1,,,0.029783393501805,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Machine Learning",unknown,active,adset,16,16,1,,,0.029888059701493,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Machine Learning",female,active,adset,189,189,1,"Link Clicks",1,0.65753731343284,0.65753731343284,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Machine Learning",male,active,adset,730,731,1.0013698630137,,,1.9825746268657,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Nurse,female,active,adset,370,383,1.0351351351351,"Link Clicks",1,1.5,1.5,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Nurse,male,active,adset,218,226,1.0366972477064,"Link Clicks",1,1.02,1.02,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG",Nurse,unknown,active,adset,8,8,1,,,0.04,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Preschool teacher",female,active,adset,491,492,1.0020366598778,,,2.04,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Preschool teacher",male,active,adset,139,141,1.0143884892086,,,0.58,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Preschool teacher",unknown,active,adset,14,14,1,,,0.06,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",male,active,adset,667,669,1.0029985007496,"Link Clicks",5,2.2618637992832,0.45237275985663,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",female,active,adset,119,120,1.0084033613445,,,0.49820788530466,,,,2020-09-01,2020-09-04
+"Automated Discrimination - CH - IG","Truck Driver",unknown,active,adset,6,6,1,,,0.019928315412186,,,,2020-09-01,2020-09-04
