@@ -2,9 +2,10 @@ require(needs)
 needs(dplyr,
       forcats,
       ggplot2,
-      lubridate,
-      tidymodels,
       janitor,
+      lubridate,
       stringr,
+      tidymodels,
       tidyr,
+      tidytext,
       readxl)

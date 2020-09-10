@@ -1,0 +1,286 @@
+---
+title: "Automated discrimination"
+author: "Moritz Zajonz"
+date: "9/10/2020"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+```{r echo=FALSE,eval=TRUE}
+source("05_data_pipeline.R")
+```
+
+
+# Point 1: Discrimination with no audience targeting
+
+## By Google Ads
+
+```{r}
+google_overall_share <- google %>%
+  group_by(country) %>% 
+  slice_max(datetime) %>% 
+  ungroup() %>%
+  group_by(job, gender) %>% 
+  summarise(impr_sum = sum(impressions)) %>% 
+  ungroup() %>% 
+  group_by(job) %>% 
+  mutate(impr_rel = impr_sum/sum(impr_sum))
+
+google_overall_share %>% 
+  filter(gender == "female") %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
+  labs(x = paste0("Female share of impressions\nfor employment ad on Google"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+```{r}
+google %>%
+  filter(gender == "female") %>%
+  group_by(country) %>% 
+  slice_max(datetime) %>%
+  ungroup() %>% 
+  mutate(job = reorder_within(job, impr_rel, country)) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job), color = "#7fc97f")+
+  scale_y_reordered()+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
+  labs(x = paste0("Female share of impressions\nfor employment ad on Google"),
+       y = "Employment ad")+
+  facet_wrap(~country, scales = "free_y")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+
+## By Facebook Ads
+
+```{r}
+facebook_overall_share <- facebook %>%
+  group_by(country) %>% 
+  slice_max(datetime) %>% 
+  ungroup() %>%
+  group_by(job, gender) %>% 
+  summarise(impr_sum = sum(impressions)) %>% 
+  ungroup() %>% 
+  group_by(job) %>% 
+  mutate(impr_rel = impr_sum/sum(impr_sum))
+
+facebook_overall_share %>% 
+  filter(gender == "female") %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
+  labs(x = paste0("Female share of impressions\nfor employment ad on Facebook"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+```{r}
+facebook %>%
+  filter(gender == "female") %>%
+  group_by(country) %>% 
+  slice_max(datetime) %>%
+  ungroup() %>% 
+  mutate(job = reorder_within(job, impr_rel, country)) %>% 
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
+  scale_y_reordered()+
+  labs(x = paste0("Female share of impressions\nfor employment ad on Facebook"),
+       y = "Employment ad")+
+  facet_wrap(~country, scales = "free_y")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+# Point 2: Click-through-rate doesn't influence ad delivery
+
+## Female share of Impressions of Google ads
+
+```{r}
+google_overall_share_time <- google %>%
+  group_by(country, job, gender, time) %>% 
+  summarise(impr_sum = sum(impressions)) %>% 
+  ungroup() %>% 
+  group_by(job) %>% 
+  mutate(impr_rel = impr_sum/sum(impr_sum))
+
+
+google_overall_share_time %>% 
+  filter(gender == "female") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = impr_rel, color = job))+
+  geom_point(aes(x = time, y = impr_rel, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Female share of Impressions of Google ads")+
+  facet_wrap(~country, scales = "free")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR of female audience for each country
+
+```{r}
+google_overall_ctr_time <- google %>%
+  group_by(country, job, gender, time) %>% 
+  summarise(ctr_grouped = mean(ctr)) #%>% 
+  # ungroup() %>% 
+  # group_by(job) %>% 
+  # mutate(impr_rel = impr_sum/sum(impr_sum))
+
+google_overall_ctr_time %>% 
+  filter(gender == "female") %>%
+  ggplot()+
+  geom_line(aes(x = time, y = ctr_grouped, color = job))+
+  geom_point(aes(x = time, y = ctr_grouped, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Click-trough-rate of female audience for Google ads")+
+  facet_wrap(~country, scales = "free")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR of female audience for each gender and country
+
+```{r fig.height=8}
+google_overall_ctr_time %>% 
+  # filter(gender == "female") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = ctr_grouped, color = job))+
+  geom_point(aes(x = time, y = ctr_grouped, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Click-trough-rate of female audience for Google ads")+
+  facet_wrap(country~gender, scales = "free", ncol = 3)+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+## Female share of Impressions of Facebook ads
+
+```{r}
+facebook_overall_share_time <- facebook %>%
+  group_by(country, job, gender, time) %>% 
+  summarise(impr_sum = sum(impressions)) %>% 
+  ungroup() %>% 
+  group_by(job) %>% 
+  mutate(impr_rel = impr_sum/sum(impr_sum))
+
+
+facebook_overall_share_time %>% 
+  filter(gender == "female") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = impr_rel, color = job))+
+  geom_point(aes(x = time, y = impr_rel, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Female share of Impressions of Facebook ads")+
+  facet_wrap(~country, scales = "free")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR of female audience for each country
+
+```{r}
+facebook_overall_ctr_time <- facebook %>%
+  group_by(country, job, gender, time) %>% 
+  summarise(ctr_grouped = mean(ctr)) #%>% 
+  # ungroup() %>% 
+  # group_by(job) %>% 
+  # mutate(impr_rel = impr_sum/sum(impr_sum))
+
+facebook_overall_ctr_time %>% 
+  filter(gender == "female") %>%
+  ggplot()+
+  geom_line(aes(x = time, y = ctr_grouped, color = job))+
+  geom_point(aes(x = time, y = ctr_grouped, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Click-trough-rate of female audience for Facebook ads")+
+  facet_wrap(~country, scales = "free")+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+### CTR of female audience for each gender and country
+
+```{r fig.height=8}
+facebook_overall_ctr_time %>% 
+  # filter(gender == "female") %>% 
+  ggplot()+
+  geom_line(aes(x = time, y = ctr_grouped, color = job))+
+  geom_point(aes(x = time, y = ctr_grouped, color = job))+
+  scale_color_discrete(name = "Employment ad")+
+  scale_y_continuous(labels = scales::percent)+
+  labs(x = "Time in hours",
+       y = "Click-trough-rate of female audience for Facebook ads")+
+  facet_wrap(country~gender, scales = "free", ncol = 3)+
+  theme_minimal()+
+  theme(legend.position = "top")
+```
+
+
+
+# Point 3: Ad images influence ad delivery
+
+## On Google
+
+```{r}
+gg_truck2 %>%
+  filter(gender == "female") %>%
+  slice_max(datetime) %>%
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = paste0("Female share of impressions\nfor truck ad variations on Google in France"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+
+## On Facebook
+
+```{r}
+fb_truck2 %>%
+  filter(gender == "female") %>%
+  slice_max(datetime) %>%
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = paste0("Female share of impressions\nfor truck ad variations on Facebook in France"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+```
+
+
