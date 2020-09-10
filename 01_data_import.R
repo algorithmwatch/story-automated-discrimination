@@ -1,4 +1,5 @@
 # Data import for Google
+# is different from FB because the reports were not separated for countries - all in one folder
 
 folder <- "data/google/"
 subfolder <- "gender"
@@ -16,7 +17,7 @@ rm(next_report)
 
 
 # Data import for Facebook
-# Data cleaning function for Facebook data
+# and cleaning for Facebook data
 
 clean_facebook_data <- function(input) {
   if("Campaign.Name" %in% names(next_report)){
@@ -51,7 +52,7 @@ country_folder <- "data"
 subfolder <- "/facebook/gender"
 filenames_facebook <- c()
 for (country in list.dirs(country_folder, recursive = FALSE)) {
-  filenames_facebook <- c(filenames_facebook, list.files(paste0(country, subfolder), full.names = T))
+  filenames_facebook <- c(filenames_facebook, list.files(paste0(country, subfolder), full.names = TRUE))
 }
 
 
