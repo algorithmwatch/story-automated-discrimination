@@ -70,3 +70,46 @@ facebook <- facebook %>%
   group_by(country) %>%
   mutate(time = interval(datetime, start = min(datetime)) %>% time_length(unit = "hour") %>% round(4)) %>%
   ungroup()
+
+
+# Data import for Truck2
+
+# Google
+
+folder_gg_truck2 <- "data/google/truck2"
+filenames_gg_truck2 <- list.files(folder_gg_truck2, full.names = TRUE)
+
+gg_truck2 <- tibble() # start with an empty dataframe
+for (file in filenames_gg_truck2) { # loop through all the files in the google/gender/ folder
+  next_report <- read_excel(file)
+  next_report$datetime <- str_extract(file, "2020.+(?=\\.xlsx)") %>% # extract the time of the report creation
+    as_datetime()
+  gg_truck2 <- rbind(gg_truck2, next_report)
+}
+rm(next_report)
+
+# Facebook
+
+folder_fb_truck2 <- "data/france/facebook/truck2-gender/"
+filenames_fb_truck2 <- list.files(folder_fb_truck2)
+
+
+fb_truck2 <- tibble() # start with an empty dataframe
+for (file in filenames_fb_truck2) { # loop through all the files in the facebook/gender/ folder
+  next_report <- read.csv(paste0(folder_fb_truck2, file))
+  next_report$datetime <- str_remove(file, "\\.csv") %>% # extract the time of the report creation
+    ymd_hm()
+  next_report <- clean_facebook_data(next_report)
+  next_report <- next_report %>%
+    separate(job, into = c("job", "variation"), sep = " - ")
+  fb_truck2 <- rbind(fb_truck2, next_report)
+}
+rm(next_report)
+
+fb_truck2 <- fb_truck2 %>%
+  group_by(country) %>%
+  mutate(time = interval(datetime, start = min(datetime)) %>% time_length(unit = "hour") %>% round(4)) %>%
+  ungroup()
+
+
+

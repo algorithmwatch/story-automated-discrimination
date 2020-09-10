@@ -1,3 +1,5 @@
+# Google
+
 countries <- google %>% pull(country) %>% unique()
 for (c in countries) {
   google_gender_female_share <- google %>%
@@ -23,6 +25,9 @@ for (c in countries) {
          path = "img")
 }
 
+
+# Facebook
+
 countries <- facebook %>% pull(country) %>% unique()
 for (c in countries) {
   facebook_gender_female_share <- facebook %>%
@@ -47,3 +52,51 @@ for (c in countries) {
          height = 2,
          path = "img")
 }
+
+
+# Truck2
+
+# Google
+
+gg_truck2_female_share <- gg_truck2 %>%
+  filter(gender == "female") %>%
+  slice_max(datetime) %>%
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = paste0("Female share of impressions\nfor truck ad variations on Google in France"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+ggsave(filename = paste0("gg_truck2_female_share.png"),
+       plot = gg_truck2_female_share,
+       device = "png",
+       dpi = 300,
+       width = 4,
+       height = 2,
+       path = "img")
+
+
+# Facebook
+
+fb_truck2_female_share <- fb_truck2 %>%
+  filter(gender == "female") %>%
+  slice_max(datetime) %>%
+  ggplot()+
+  geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  scale_x_continuous(limits = c(0,1))+
+  labs(x = paste0("Female share of impressions\nfor truck ad variations on Facebook in France"),
+       y = "Employment ad")+
+  theme_minimal()+
+  theme(legend.position = "top",
+        axis.title.y = element_blank())
+ggsave(filename = paste0("fb_truck2_female_share.png"),
+       plot = fb_truck2_female_share,
+       device = "png",
+       dpi = 300,
+       width = 4,
+       height = 2,
+       path = "img")
+
+
