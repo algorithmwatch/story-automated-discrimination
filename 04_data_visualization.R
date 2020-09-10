@@ -1,6 +1,6 @@
 countries <- google %>% pull(country) %>% unique()
 for (c in countries) {
-  google_gender_female_share <- google_male_female %>%
+  google_gender_female_share <- google %>%
     filter(gender == "female",
            country == c) %>%
     slice_max(datetime) %>%
@@ -25,7 +25,7 @@ for (c in countries) {
 
 countries <- facebook %>% pull(country) %>% unique()
 for (c in countries) {
-  facebook_gender_female_share <- facebook_male_female %>%
+  facebook_gender_female_share <- facebook %>%
     filter(gender == "female",
            country == c) %>%
     slice_max(datetime) %>%
