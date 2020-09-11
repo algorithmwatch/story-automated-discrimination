@@ -1,0 +1,9 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - ES","Preschool teacher",female,active,adset,268,268,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",male,active,adset,79,79,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",female,active,adset,53,53,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,female,active,adset,187,187,1,"Link Clicks",1,0.392,0.392,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,male,active,adset,86,86,1,,,0.154,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,unknown,active,adset,1,1,1,,,0.014,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,female,active,adset,109,109,1,"Link Clicks",2,0.245,0.1225,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,male,active,adset,92,92,1,"Link Clicks",1,0.245,0.245,,,2020-09-01,2020-09-11

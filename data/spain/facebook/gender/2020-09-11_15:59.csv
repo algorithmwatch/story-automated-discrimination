@@ -1,0 +1,16 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - ES","Machine Learning",female,active,adset,52,56,1.0769230769231,,,0.01,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Machine Learning",male,active,adset,47,49,1.0425531914894,"Link Clicks",1,0,0,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Machine Learning",unknown,active,adset,1,1,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,female,active,adset,195,195,1,"Link Clicks",3,0.4,0.13333333333333,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,male,active,adset,78,78,1,,,0.14857142857143,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,unknown,active,adset,1,1,1,,,0.011428571428571,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,female,active,adset,109,109,1,"Link Clicks",2,0.245,0.1225,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,male,active,adset,92,92,1,"Link Clicks",1,0.245,0.245,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",female,active,adset,142,158,1.112676056338,,,0.046666666666667,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",male,active,adset,101,103,1.019801980198,,,0.023333333333333,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",unknown,active,adset,7,7,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",male,active,adset,83,83,1,,,0.053333333333333,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",female,active,adset,49,49,1,,,0.026666666666667,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Legal Counsel",female,active,adset,91,105,1.1538461538462,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Legal Counsel",male,active,adset,41,41,1,,,0,,,,2020-09-01,2020-09-11

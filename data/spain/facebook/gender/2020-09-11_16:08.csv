@@ -1,0 +1,17 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - ES","Machine Learning",female,active,adset,194,213,1.0979381443299,,,0.12,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Machine Learning",male,active,adset,187,199,1.0641711229947,"Link Clicks",1,0.08,0.08,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Machine Learning",unknown,active,adset,3,3,1,,,0,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,female,active,adset,306,306,1,"Link Clicks",5,0.64594936708861,0.12918987341772,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,male,active,adset,93,93,1,"Link Clicks",1,0.15379746835443,0.15379746835443,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,unknown,active,adset,1,1,1,,,0.010253164556962,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,female,active,adset,161,161,1,"Link Clicks",3,0.34666666666667,0.11555555555556,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Hairdresser,male,active,adset,134,134,1,"Link Clicks",1,0.33333333333333,0.33333333333333,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",female,active,adset,404,462,1.1435643564356,,,0.23333333333333,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",male,active,adset,277,297,1.072202166065,,,0.031111111111111,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Preschool teacher",unknown,active,adset,19,20,1.0526315789474,,,0.015555555555556,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",male,active,adset,183,183,1,,,0.17333333333333,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Truck Driver",female,active,adset,105,105,1,,,0.086666666666667,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Legal Counsel",female,active,adset,239,257,1.0753138075314,,,0.12571428571429,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Legal Counsel",male,active,adset,202,209,1.0346534653465,,,0.094285714285714,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES","Legal Counsel",unknown,active,adset,6,6,1,,,0,,,,2020-09-01,2020-09-11

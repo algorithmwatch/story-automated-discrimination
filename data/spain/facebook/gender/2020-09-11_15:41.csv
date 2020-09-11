@@ -1,0 +1,4 @@
+﻿"Campaign Name","Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Automated Discrimination - ES",Nurse,female,active,adset,78,78,1,"Link Clicks",1,0.20222222222222,0.20222222222222,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,male,active,adset,36,36,1,,,0.028888888888889,,,,2020-09-01,2020-09-11
+"Automated Discrimination - ES",Nurse,unknown,active,adset,2,2,1,,,0.028888888888889,,,,2020-09-01,2020-09-11
