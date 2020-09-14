@@ -15,6 +15,8 @@ for (file in filenames_google) { # loop through all the files in the google/gend
 }
 rm(next_report)
 
+google <- google %>%
+  mutate(job = if_else(job == "Machine Learning developer", "Machine learning", job))
 
 # Data import for Facebook
 # and cleaning for Facebook data
