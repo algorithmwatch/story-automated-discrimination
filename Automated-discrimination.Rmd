@@ -1,10 +1,11 @@
 ---
 title: "Automated discrimination"
-author: "Moritz Zajonz"
-date: "9/10/2020"
+# author: "Moritz Zajonz"
+# date: "9/10/2020"
 output:
-  html_document:
-    df_print: paged
+  html_document: 
+    toc: yes
+    df_print: kable
 ---
 
 ```{r setup, include=FALSE}
@@ -16,8 +17,23 @@ knitr::opts_chunk$set(
 ```
 
 ```{r echo=FALSE,eval=TRUE}
+options(scipen = 42)
 source("05_data_pipeline.R")
 ```
+
+# Variable explanation
+
+The ad reports from Google and Facebook were cleaned and restructured to the same set of variables:
+
+- *country*: the country the ad was targeted for
+- *job*: the type of employment ad that was shown
+- *gender*: assumed gender of the audience; impressions with unknown gender are filtered out in this report and calculations are based on data points with known gender
+- *clicks*: number of clicks on ad — cumulative
+- *impressions*: number of times ad was shown — cumulative
+- *ctr*: click-through-rate; share of clicks per impression
+- *datetime*: date and time of data points; this is based on time of manual downloads of reports every few minutes (at more or less regular intervals)
+- *time*: hours passed since first impressions were registered
+- *impr_rel*: share of all impressions of an ad at that time
 
 
 # Point 1: Discrimination with no audience targeting
@@ -25,30 +41,51 @@ source("05_data_pipeline.R")
 ## By Google Ads
 
 ```{r}
-google_overall_share <- google %>%
+google_overall_share <- google_male_female %>%
   group_by(country) %>% 
   slice_max(datetime) %>% 
   ungroup() %>%
   group_by(job, gender) %>% 
-  summarise(impr_sum = sum(impressions)) %>% 
+  summarise(impressions = sum(impressions)) %>% 
   ungroup() %>% 
   group_by(job) %>% 
-  mutate(impr_rel = impr_sum/sum(impr_sum))
+  mutate(impr_rel = impressions/sum(impressions)) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = gender, values_from = c(impressions, impr_rel)) %>%
+# TODO: margin of error
+  group_by(job) %>% 
+  mutate(lower = binom.test(c(impressions_female, impressions_male))[["conf.int"]][1],
+         upper = binom.test(c(impressions_female, impressions_male))[["conf.int"]][2])
 
 google_overall_share %>% 
-  filter(gender == "female") %>% 
-  ggplot()+
-  geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
+  select(job,
+         impressions = impressions_female, 
+         impr_rel = impr_rel_female, 
+         lower, 
+         upper) %>% 
+  ggplot(aes(y = job %>% fct_reorder(., impr_rel)))+
+  geom_errorbarh(aes(xmin = lower, xmax = upper), height = .2)+
+  geom_point(aes(x = impr_rel), color = "#7fc97f")+
   scale_x_continuous(limits = c(0,1), labels = scales::percent)+
   labs(x = paste0("Female share of impressions\nfor employment ad on Google"),
        y = "Employment ad")+
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
+
+# Corresponding data
+google_overall_share %>% 
+  select(job,
+         impressions = impressions_female, 
+         impr_rel = impr_rel_female, 
+         lower, 
+         upper) %>% 
+  arrange(-impr_rel)
 ```
 
 ```{r}
-google %>%
+# Plot
+google_male_female %>%
   filter(gender == "female") %>%
   group_by(country) %>% 
   slice_max(datetime) %>%
@@ -64,22 +101,33 @@ google %>%
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
+
+# Corresponding data
+google_male_female %>%
+  filter(gender == "female") %>%
+  group_by(country) %>% 
+  slice_max(datetime) %>%
+  ungroup() %>% 
+  select(country, job, gender, impr_rel) %>% 
+  arrange(country, -impr_rel)
 ```
 
 
 ## By Facebook Ads
 
 ```{r}
-facebook_overall_share <- facebook %>%
+facebook_overall_share <- facebook_male_female %>%
   group_by(country) %>% 
   slice_max(datetime) %>% 
   ungroup() %>%
   group_by(job, gender) %>% 
-  summarise(impr_sum = sum(impressions)) %>% 
+  summarise(impressions = sum(impressions)) %>% 
   ungroup() %>% 
   group_by(job) %>% 
-  mutate(impr_rel = impr_sum/sum(impr_sum))
+  mutate(impr_rel = impressions/sum(impressions)) %>% 
+  ungroup()
 
+# Plot
 facebook_overall_share %>% 
   filter(gender == "female") %>% 
   ggplot()+
@@ -90,10 +138,17 @@ facebook_overall_share %>%
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
+
+# Corresponding data
+facebook_overall_share %>% 
+  filter(gender == "female") %>% 
+  select(-impressions) %>% 
+  arrange(-impr_rel)
 ```
 
 ```{r}
-facebook %>%
+# Plot
+facebook_male_female %>%
   filter(gender == "female") %>%
   group_by(country) %>% 
   slice_max(datetime) %>%
@@ -109,141 +164,56 @@ facebook %>%
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
-```
 
-# Point 2: Click-through-rate doesn't influence ad delivery
-
-## Female share of Impressions of Google ads
-
-```{r}
-google_overall_share_time <- google %>%
-  group_by(country, job, gender, time) %>% 
-  summarise(impr_sum = sum(impressions)) %>% 
-  ungroup() %>% 
-  group_by(job) %>% 
-  mutate(impr_rel = impr_sum/sum(impr_sum))
-
-
-google_overall_share_time %>% 
-  filter(gender == "female") %>% 
-  ggplot()+
-  geom_line(aes(x = time, y = impr_rel, color = job))+
-  geom_point(aes(x = time, y = impr_rel, color = job))+
-  scale_color_discrete(name = "Employment ad")+
-  scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Female share of Impressions of Google ads")+
-  facet_wrap(~country, scales = "free")+
-  theme_minimal()+
-  theme(legend.position = "top")
-```
-
-### CTR of female audience for each country
-
-```{r}
-google_overall_ctr_time <- google %>%
-  group_by(country, job, gender, time) %>% 
-  summarise(ctr_grouped = mean(ctr)) #%>% 
-  # ungroup() %>% 
-  # group_by(job) %>% 
-  # mutate(impr_rel = impr_sum/sum(impr_sum))
-
-google_overall_ctr_time %>% 
+# Corresponding data
+facebook_male_female %>%
   filter(gender == "female") %>%
-  ggplot()+
-  geom_line(aes(x = time, y = ctr_grouped, color = job))+
-  geom_point(aes(x = time, y = ctr_grouped, color = job))+
-  scale_color_discrete(name = "Employment ad")+
-  scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Click-trough-rate of female audience for Google ads")+
-  facet_wrap(~country, scales = "free")+
-  theme_minimal()+
-  theme(legend.position = "top")
-```
-
-### CTR of female audience for each gender and country
-
-```{r fig.height=8}
-google_overall_ctr_time %>% 
-  # filter(gender == "female") %>% 
-  ggplot()+
-  geom_line(aes(x = time, y = ctr_grouped, color = job))+
-  geom_point(aes(x = time, y = ctr_grouped, color = job))+
-  scale_color_discrete(name = "Employment ad")+
-  scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Click-trough-rate of female audience for Google ads")+
-  facet_wrap(country~gender, scales = "free", ncol = 3)+
-  theme_minimal()+
-  theme(legend.position = "top")
-```
-
-
-## Female share of Impressions of Facebook ads
-
-```{r}
-facebook_overall_share_time <- facebook %>%
-  group_by(country, job, gender, time) %>% 
-  summarise(impr_sum = sum(impressions)) %>% 
+  group_by(country) %>% 
+  slice_max(datetime) %>%
   ungroup() %>% 
-  group_by(job) %>% 
-  mutate(impr_rel = impr_sum/sum(impr_sum))
-
-
-facebook_overall_share_time %>% 
-  filter(gender == "female") %>% 
-  ggplot()+
-  geom_line(aes(x = time, y = impr_rel, color = job))+
-  geom_point(aes(x = time, y = impr_rel, color = job))+
-  scale_color_discrete(name = "Employment ad")+
-  scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Female share of Impressions of Facebook ads")+
-  facet_wrap(~country, scales = "free")+
-  theme_minimal()+
-  theme(legend.position = "top")
+  select(country, job, gender, impr_rel) %>% 
+  arrange(country, -impr_rel)
 ```
 
-### CTR of female audience for each country
+# Point 2: Click-through-rate doesn't influence impressions
+
+## Google
 
 ```{r}
-facebook_overall_ctr_time <- facebook %>%
-  group_by(country, job, gender, time) %>% 
-  summarise(ctr_grouped = mean(ctr)) #%>% 
-  # ungroup() %>% 
-  # group_by(job) %>% 
-  # mutate(impr_rel = impr_sum/sum(impr_sum))
-
-facebook_overall_ctr_time %>% 
-  filter(gender == "female") %>%
+google_male_female %>% 
+  pivot_wider(names_from = gender, values_from = c(clicks, impressions, ctr, impr_rel)) %>%
+  mutate(impr_rel_diff = impr_rel_female-impr_rel_male,
+         ctr_diff = ctr_female - ctr_male) %>% 
   ggplot()+
-  geom_line(aes(x = time, y = ctr_grouped, color = job))+
-  geom_point(aes(x = time, y = ctr_grouped, color = job))+
-  scale_color_discrete(name = "Employment ad")+
+  geom_point(aes(x = ctr_diff, y = impr_rel_diff), alpha = .2)+
+  scale_x_continuous(labels = scales::percent)+
   scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Click-trough-rate of female audience for Facebook ads")+
-  facet_wrap(~country, scales = "free")+
-  theme_minimal()+
-  theme(legend.position = "top")
+  labs(title = "Click-through-rate vs. Impressions on Google",
+       subtitle = "Difference in percentage points between female and male audience\nDarker points indicate overlapping points",
+       x = "Female audience clicks more often than male audience →",
+       y = "← Male — audience sees ads more often — Female →")+
+  theme_minimal()
+
+ggplot_build(last_plot())$plot$data
 ```
+## Facebook
 
-### CTR of female audience for each gender and country
-
-```{r fig.height=8}
-facebook_overall_ctr_time %>% 
-  # filter(gender == "female") %>% 
+```{r}
+facebook_male_female %>% 
+  pivot_wider(names_from = gender, values_from = c(clicks, impressions, ctr, impr_rel)) %>%
+  mutate(impr_rel_diff = impr_rel_female-impr_rel_male,
+         ctr_diff = ctr_female - ctr_male) %>% 
   ggplot()+
-  geom_line(aes(x = time, y = ctr_grouped, color = job))+
-  geom_point(aes(x = time, y = ctr_grouped, color = job))+
-  scale_color_discrete(name = "Employment ad")+
+  geom_point(aes(x = ctr_diff, y = impr_rel_diff), alpha = .2)+
+  scale_x_continuous(labels = scales::percent)+
   scale_y_continuous(labels = scales::percent)+
-  labs(x = "Time in hours",
-       y = "Click-trough-rate of female audience for Facebook ads")+
-  facet_wrap(country~gender, scales = "free", ncol = 3)+
-  theme_minimal()+
-  theme(legend.position = "top")
+  labs(title = "Click-through-rate vs. Impressions on Facebook",
+       subtitle = "Difference in percentage points between female and male audience\nDarker points indicate overlapping points",
+       x = "Female audience clicks more often than male audience →",
+       y = "← Male — audience sees ads more often — Female →")+
+  theme_minimal()
+
+ggplot_build(last_plot())$plot$data
 ```
 
 
@@ -253,34 +223,46 @@ facebook_overall_ctr_time %>%
 ## On Google
 
 ```{r}
-gg_truck2 %>%
+# Plot
+gg_truck2_male_female %>%
   filter(gender == "female") %>%
   slice_max(datetime) %>%
   ggplot()+
   geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
-  scale_x_continuous(limits = c(0,1))+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
   labs(x = paste0("Female share of impressions\nfor truck ad variations on Google in France"),
        y = "Employment ad")+
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
+
+# Corresponding data
+ggplot_build(last_plot())$plot$data %>%  
+  select(country, job, variation, gender, impr_rel) %>% 
+  arrange(-impr_rel)
 ```
 
 
 ## On Facebook
 
 ```{r}
-fb_truck2 %>%
+# Plot
+fb_truck2_male_female %>%
   filter(gender == "female") %>%
   slice_max(datetime) %>%
   ggplot()+
   geom_point(aes(x = impr_rel, y = variation %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
-  scale_x_continuous(limits = c(0,1))+
+  scale_x_continuous(limits = c(0,1), labels = scales::percent)+
   labs(x = paste0("Female share of impressions\nfor truck ad variations on Facebook in France"),
        y = "Employment ad")+
   theme_minimal()+
   theme(legend.position = "top",
         axis.title.y = element_blank())
+
+# Corresponding data
+ggplot_build(last_plot())$plot$data %>%  
+  select(country, job, variation, gender, impr_rel) %>% 
+  arrange(-impr_rel)
 ```
 
 
