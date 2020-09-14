@@ -11,7 +11,7 @@ google <- google %>%
   group_by(country) %>%
   mutate(time = interval(datetime, start = min(datetime)) %>% time_length(unit = "hour")) %>%
   ungroup() %>%
-  mutate(job = if_else(job == "Machine Learning developer", "Machine learning", job))
+  mutate(job = if_else(job == "Machine Learning developer", "Machine Learning", job))
 
 
 # Truck2 data
