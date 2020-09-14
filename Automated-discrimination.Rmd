@@ -6,6 +6,7 @@ output:
   html_document: 
     toc: yes
     df_print: kable
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
