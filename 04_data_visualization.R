@@ -21,7 +21,7 @@ for (c in countries) {
          dpi = 300,
          width = 4,
          height = 2,
-         path = "img")
+         path = "output/img")
 }
 
 
@@ -48,7 +48,7 @@ for (c in countries) {
          dpi = 300,
          width = 4,
          height = 2,
-         path = "img")
+         path = "output/img")
 }
 
 
@@ -73,7 +73,7 @@ ggsave(filename = paste0("gg_truck2_female_share.png"),
        dpi = 300,
        width = 4,
        height = 2,
-       path = "img")
+       path = "output/img")
 
 
 # Facebook
@@ -95,6 +95,6 @@ ggsave(filename = paste0("fb_truck2_female_share.png"),
        dpi = 300,
        width = 4,
        height = 2,
-       path = "img")
+       path = "output/img")
 
 

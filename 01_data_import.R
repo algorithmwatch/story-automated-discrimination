@@ -1,7 +1,7 @@
 # Data import for Google
 # is different from FB because the reports were not separated for countries - all in one folder
 
-folder <- "data/google/"
+folder <- "input/google/"
 subfolder <- "gender"
 filenames_google <- list.files(paste0(folder, subfolder), full.names = T)
 filenames_google <- filenames_google[-1] # remove the test run results
@@ -47,7 +47,7 @@ clean_facebook_data <- function(input) {
   }
 }
 
-country_folder <- "data"
+country_folder <- "input"
 subfolder <- "/facebook/gender"
 filenames_facebook <- c()
 for (country in list.dirs(country_folder, recursive = FALSE)) {
@@ -75,7 +75,7 @@ facebook <- facebook %>%
 
 ## Google
 
-folder_gg_truck2 <- "data/google/truck2"
+folder_gg_truck2 <- "input/google/truck2"
 filenames_gg_truck2 <- list.files(folder_gg_truck2, full.names = TRUE)
 
 gg_truck2 <- tibble() # start with an empty dataframe
@@ -89,7 +89,7 @@ rm(next_report)
 
 ## Facebook
 
-folder_fb_truck2 <- "data/france/facebook/truck2-gender/"
+folder_fb_truck2 <- "input/france/facebook/truck2-gender/"
 filenames_fb_truck2 <- list.files(folder_fb_truck2)
 
 

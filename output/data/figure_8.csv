@@ -1,0 +1,6 @@
+"country","job","variation","gender","impr_rel"
+"FR","Truck Driver","baseline","female",0.153153153153153
+"FR","Truck Driver","image-road","female",0.526255707762557
+"FR","Truck Driver","feminine","female",0.189294403892944
+"FR","Truck Driver","gendered","female",0.220246238030096
+"FR","Truck Driver","image-lipstick","female",0.876577070762479
