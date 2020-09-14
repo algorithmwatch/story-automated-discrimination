@@ -1,13 +1,12 @@
 # Google
 
-countries <- google %>% pull(country) %>% unique()
+countries <- google_male_female %>% pull(country) %>% unique()
 for (c in countries) {
-  google_gender_female_share <- google %>%
+  google_gender_female_share <- google_male_female %>%
     filter(gender == "female",
            country == c) %>%
     slice_max(datetime) %>%
     ggplot()+
-    # geom_vline(aes(xintercept = .5))+
     geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
     scale_x_continuous(limits = c(0,1))+
     # scale_y_discrete(expand = expansion(add = c(0.6,6))) +
@@ -28,14 +27,13 @@ for (c in countries) {
 
 # Facebook
 
-countries <- facebook %>% pull(country) %>% unique()
+countries <- facebook_male_female %>% pull(country) %>% unique()
 for (c in countries) {
-  facebook_gender_female_share <- facebook %>%
+  facebook_gender_female_share <- facebook_male_female %>%
     filter(gender == "female",
            country == c) %>%
     slice_max(datetime) %>%
     ggplot()+
-    # geom_vline(aes(xintercept = .5))+
     geom_point(aes(x = impr_rel, y = job %>% fct_reorder(., impr_rel)), color = "#7fc97f")+
     scale_x_continuous(limits = c(0,1))+
     # scale_y_discrete(expand = expansion(add = c(0.6,6))) +
@@ -58,7 +56,7 @@ for (c in countries) {
 
 # Google
 
-gg_truck2_female_share <- gg_truck2 %>%
+gg_truck2_female_share <- gg_truck2_male_female %>%
   filter(gender == "female") %>%
   slice_max(datetime) %>%
   ggplot()+
@@ -80,7 +78,7 @@ ggsave(filename = paste0("gg_truck2_female_share.png"),
 
 # Facebook
 
-fb_truck2_female_share <- fb_truck2 %>%
+fb_truck2_female_share <- fb_truck2_male_female %>%
   filter(gender == "female") %>%
   slice_max(datetime) %>%
   ggplot()+

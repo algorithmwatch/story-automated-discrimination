@@ -74,7 +74,7 @@ facebook <- facebook %>%
 
 # Data import for Truck2
 
-# Google
+## Google
 
 folder_gg_truck2 <- "data/google/truck2"
 filenames_gg_truck2 <- list.files(folder_gg_truck2, full.names = TRUE)
@@ -88,7 +88,7 @@ for (file in filenames_gg_truck2) { # loop through all the files in the google/g
 }
 rm(next_report)
 
-# Facebook
+## Facebook
 
 folder_fb_truck2 <- "data/france/facebook/truck2-gender/"
 filenames_fb_truck2 <- list.files(folder_fb_truck2)

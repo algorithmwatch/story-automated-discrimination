@@ -12,6 +12,7 @@ google <- google %>%
   mutate(time = interval(datetime, start = min(datetime)) %>% time_length(unit = "hour")) %>%
   ungroup()
 
+
 # Truck2 data
 
 gg_truck2 <- gg_truck2 %>%
