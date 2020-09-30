@@ -1,4 +1,4 @@
-# Automated Discrimination
+# Automated Discrimination in online ad delivery
 
 This folder contains the results of an experiment that assesses how Facebook and Google skew the distribution of advertisements, absent any targeting from the advertiser. It is a replication of the following paper:
 
@@ -12,3 +12,22 @@ This folder contains the results of an experiment that assesses how Facebook and
 
 ![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/92d1m-google-seems-to-discriminate-much-less.png?raw=true)
 
+### In line with the paper by Ali et al., we found that images were likely to be the main factor for Facebook's discrimination.
+
+![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/FkoAh-facebook-uses-the-image-of-the-ad-to-discriminate.png?raw=true)
+
+
+### Interestingly, the discrimination starts _before_ the ad starts to run. It is not an adaptation to the ad's click-through rate (CTR).
+
+![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/Mc3UY-facebook-does-not-optimize-based-on-an-ad-s-ctr.png?raw=true)
+
+
+### However, the overall CTR is correlated for both genders. This suggests that platforms successfully identify users based on their likelihood of clicking on an ad.
+
+![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/05Na4-ctr-between-gender-mostly-correlate-on-facebook.png?raw=true)
+
+### We conducted additional experiments. Here, we checked whether the delivery of an ad changed based on the salary that was advertised. There is no apparent discrimination.
+
+![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/QOdFS-no-discrimination-based-on-salary.png?raw=true)
+
+![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/DDeUp-no-discrimination-based-on-salary-age-.png?raw=true)
