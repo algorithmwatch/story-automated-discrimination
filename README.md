@@ -1,13 +1,14 @@
 # Automated Discrimination
 
-This experiment assesses how Facebook and Google skew the distribution of advertisements, absent any targeting from the advertiser.
+This folder contains the results of an experiment that assesses how Facebook and Google skew the distribution of advertisements, absent any targeting from the advertiser. It is a replication of the following paper:
 
-These are the results of the main experiment on Facebook.
+> Ali, M., Sapiezynski, P., Bogen, M., Korolova, A., Mislove, A., & Rieke, A. (2019). Discrimination through Optimization: How Facebook's Ad Delivery Can Lead to Biased Outcomes. _Proceedings of the ACM on Human-Computer Interaction_, 3(CSCW), 1-30.
 
-<iframe title="When deciding who to show an ad to, Facebook relies on gross stereotypes" aria-label="chart" id="datawrapper-chart-zmyqK" src="https://datawrapper.dwcdn.net/zmyqK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
+### These are the results of the main experiment on Facebook.
 
-A similar experiment on Google provided different results. However, for a reason we ignore, Google did not let us run ads with an unlimited bid. Capping the bid might have the effect of disturbing the optimization algorithm.
+![](https://raw.githubusercontent.com/algorithmwatch/automated-discrimination/main/output/img/zmyqK-when-deciding-who-to-show-an-ad-to-facebook-relies-on-gross-stereotypes.png)
 
-<iframe title="Google seems to discriminate much less" aria-label="chart" id="datawrapper-chart-92d1m" src="https://datawrapper.dwcdn.net/92d1m/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
+### A similar experiment on Google provided different results. However, for a reason we ignore, Google did not let us run ads with an unlimited bid. Capping the bid might have the effect of disturbing the optimization algorithm.
+
+![](https://raw.githubusercontent.com/algorithmwatch/automated-discrimination/main/output/img/92d1m-google-seems-to-discriminate-much-less.png)
+
