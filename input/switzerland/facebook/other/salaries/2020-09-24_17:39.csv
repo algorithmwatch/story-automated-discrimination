@@ -1,0 +1,25 @@
+﻿"Ad Set Name",Age,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Analyses high",18-24,inactive,adset,28,28,1,,,0.15076530612245,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses high",65+,inactive,adset,80,80,1,"Link Clicks",2,0.51260204081633,0.25630102040816,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses high",25-34,inactive,adset,102,106,1.0392156862745,"Link Clicks",2,0.43219387755102,0.21609693877551,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses high",35-44,inactive,adset,194,196,1.0103092783505,"Link Clicks",2,0.93474489795918,0.46737244897959,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses high",55-64,inactive,adset,207,207,1,"Link Clicks",2,1.105612244898,0.55280612244898,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses high",45-54,inactive,adset,209,210,1.0047846889952,"Link Clicks",2,0.80408163265306,0.40204081632653,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",55-64,inactive,adset,190,191,1.0052631578947,"Link Clicks",1,1.0811458333333,1.0811458333333,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",45-54,inactive,adset,216,218,1.0092592592593,"Link Clicks",1,1.0811458333333,1.0811458333333,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",18-24,inactive,adset,21,22,1.047619047619,,,0.070729166666667,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",65+,inactive,adset,68,71,1.0441176470588,,,0.46479166666667,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",25-34,inactive,adset,94,95,1.0106382978723,"Link Clicks",1,0.4546875,0.4546875,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Analyses low",35-44,inactive,adset,158,158,1,,,0.7275,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",45-54,inactive,adset,227,264,1.1629955947137,"Link Clicks",2,0.83,0.415,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",25-34,inactive,adset,229,264,1.1528384279476,"Link Clicks",3,0.82,0.27333333333333,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",55-64,inactive,adset,188,239,1.2712765957447,"Link Clicks",2,0.81,0.405,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",65+,inactive,adset,152,211,1.3881578947368,"Link Clicks",1,0.72,0.72,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",18-24,inactive,adset,102,127,1.2450980392157,,,0.23,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",35-44,inactive,adset,234,278,1.1880341880342,"Link Clicks",1,0.85,0.85,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",25-34,inactive,adset,190,202,1.0631578947368,,,0.63,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",55-64,inactive,adset,175,185,1.0571428571429,"Link Clicks",2,0.83,0.415,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",65+,inactive,adset,102,118,1.156862745098,"Link Clicks",2,0.58,0.29,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",18-24,inactive,adset,72,81,1.125,,,0.22,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",35-44,inactive,adset,212,221,1.0424528301887,"Link Clicks",1,0.78,0.78,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",45-54,inactive,adset,213,231,1.0845070422535,,,0.97,,2020-09-24,Ongoing,2020-09-01,2020-09-24

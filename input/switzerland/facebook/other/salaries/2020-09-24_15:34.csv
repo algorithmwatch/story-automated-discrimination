@@ -1,0 +1,7 @@
+﻿"Ad Set Name",Gender,"Delivery Status","Delivery Level",Reach,Impressions,Frequency,"Result Type",Results,"Amount Spent (EUR)","Cost per Result",Starts,Ends,"Reporting Starts","Reporting Ends"
+"Sales high",male,active,adset,233,350,1.5021459227468,,,0.35,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",female,active,adset,114,183,1.6052631578947,,,0.14,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",female,active,adset,70,70,1,,,0.077777777777778,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",male,active,adset,88,89,1.0113636363636,"Link Clicks",1,0.046666666666667,0.046666666666667,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales high",unknown,active,adset,17,25,1.4705882352941,,,0.02,,2020-09-24,Ongoing,2020-09-01,2020-09-24
+"Sales low",unknown,active,adset,5,5,1,,,0.015555555555556,,2020-09-24,Ongoing,2020-09-01,2020-09-24

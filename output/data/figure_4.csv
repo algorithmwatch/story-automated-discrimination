@@ -1,31 +1,31 @@
-"country","job","gender","impr_rel"
-"CH","Truck Driver","female",0.0780065005417118
-"CH","Child care worker","female",0.910648714810282
-"CH","Nurse","female",0.670616113744076
-"CH","Machine Learning","female",0.367383512544803
-"CH","Legal Counsel","female",0.438251366120219
-"CH","Hairdresser","female",0.513513513513513
-"DE","Hairdresser","female",0.498430286241921
-"DE","Legal Counsel","female",0.493434142459212
-"DE","Machine Learning","female",0.569453886245185
-"DE","Nurse","female",0.777684844429575
-"DE","Child care worker","female",0.962334141817663
-"DE","Truck Driver","female",0.0770733439886343
-"ES","Hairdresser","female",0.496307237813885
-"ES","Legal Counsel","female",0.565627563576702
-"ES","Machine Learning","female",0.472581038264684
-"ES","Nurse","female",0.827398913699457
-"ES","Child care worker","female",0.707722915536263
-"ES","Truck Driver","female",0.256115826260609
-"FR","Hairdresser","female",0.651162790697674
-"FR","Legal Counsel","female",0.541850220264317
-"FR","Machine Learning","female",0.519791213571118
-"FR","Nurse","female",0.775123558484349
-"FR","Child care worker","female",0.905840886203424
-"FR","Truck Driver","female",0.117582817619221
-"PL","Hairdresser","female",0.670889987639061
-"PL","Legal Counsel","female",0.598117093262724
-"PL","Machine Learning","female",0.428875487761618
-"PL","Nurse","female",0.863726135615537
-"PL","Child care worker","female",0.943263833199679
-"PL","Truck Driver","female",0.0419180692283265
+country,job,gender,impr_rel,Y,size
+CH,Child care worker,female,0.910648714810282,1,1
+DE,Child care worker,female,0.962334141817663,1,1
+ES,Child care worker,female,0.707722915536263,1,1
+FR,Child care worker,female,0.905840886203424,1,1
+PL,Child care worker,female,0.943263833199679,1,1
+CH,Hairdresser,female,0.513513513513513,3,1
+DE,Hairdresser,female,0.498430286241921,3,1
+ES,Hairdresser,female,0.496307237813885,3,1
+FR,Hairdresser,female,0.651162790697674,3,1
+PL,Hairdresser,female,0.670889987639061,3,1
+CH,Legal Counsel,female,0.438251366120219,4,1
+DE,Legal Counsel,female,0.493434142459212,4,1
+ES,Legal Counsel,female,0.565627563576702,4,1
+FR,Legal Counsel,female,0.541850220264317,4,1
+PL,Legal Counsel,female,0.598117093262724,4,1
+CH,Machine Learning,female,0.367383512544803,5,1
+DE,Machine Learning,female,0.569453886245185,5,1
+ES,Machine Learning,female,0.472581038264684,5,1
+FR,Machine Learning,female,0.519791213571118,5,1
+PL,Machine Learning,female,0.428875487761618,5,1
+CH,Nurse,female,0.670616113744076,2,1
+DE,Nurse,female,0.777684844429575,2,1
+ES,Nurse,female,0.827398913699457,2,1
+FR,Nurse,female,0.775123558484349,2,1
+PL,Nurse,female,0.863726135615537,2,1
+CH,Truck Driver,female,0.078006500541712,6,1
+DE,Truck Driver,female,0.077073343988634,6,1
+ES,Truck Driver,female,0.256115826260609,6,1
+FR,Truck Driver,female,0.117582817619221,6,1
+PL,Truck Driver,female,0.041918069228327,6,1
