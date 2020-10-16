@@ -4,6 +4,8 @@ This folder contains the results of an experiment that assesses how Facebook and
 
 > Ali, M., Sapiezynski, P., Bogen, M., Korolova, A., Mislove, A., & Rieke, A. (2019). Discrimination through Optimization: How Facebook's Ad Delivery Can Lead to Biased Outcomes. _Proceedings of the ACM on Human-Computer Interaction_, 3(CSCW), 1-30.
 
+All analyses are based on the number of **impressions**. However, a sentence in the article mentions people who saw the ads. This corresponds to the **reach** of the ads. Data about reach is available in `input/facebook.csv`.
+
 ### These are the results of the main experiment on Facebook.
 
 ![](https://github.com/algorithmwatch/automated-discrimination/blob/main/output/img/zmyqK-when-deciding-who-to-show-an-ad-to-facebook-relies-on-gross-stereotypes.png?raw=true)
